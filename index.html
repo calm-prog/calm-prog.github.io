@@ -1,0 +1,131 @@
+<html lang=en>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- added (ref-5)-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <title>Ferenc's portfolio</title>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="theme-grey">
+    <div class="header-container">
+
+      <h1 class="header-name-tag">FERENC VASS</h1>
+
+      <ul class="header-nav-bar">
+        <!-- <ul> added -->
+        <li><a class="header-nav-buttons" href="#portfolio">PORTFOLIO</a></li>
+        <li><a class="header-nav-buttons" href="#about">ABOUT</a></li>
+        <li><a class="header-nav-buttons" href="#contact-me">CONTACT</a></li>
+      </ul>
+
+    </div>
+  </header>
+  <main>
+    <!-- SECTION 1: INTRO -->
+    <section id="intro" class="theme-green">
+      <img id="profile-photo" src="https://i.ibb.co/mSBn5rs/photo-of-ferenc.jpg" alt="profile-photo-of-ferenc">
+
+      <p class="intro-paragraph star-logo">
+        <strong>HI, I'M FERENC. I BUILD INTERFACES & I'M BASED IN<br> COPENHAGEN S</strong></p>
+      <!-- removed nested paragraph -->
+
+      <p class="intro-position">FRONTEND DEVELOPER</p>
+    </section>
+
+    <!-- SECTION 2: PORTFOLIO -->
+    <section id="portfolio" class="theme-white">
+
+      <h2 class="star-logo">PORTFOLIO</h2>
+
+      <ul class="project-container-ul">
+
+        <!-- FIRST PROJECT -->
+        <li class="project-bullet-point">
+          <h3 class="text-color-green">TRAVEL WEBPAGE</h3>
+
+          <h4 class="text-color-black">Project description</h4>
+
+          <p class="project-paragraph text-color-black">
+            It is an ongoing project for a food
+            webshop where the frontend was
+            initially made with vanilla
+            JavaScript/jQuery and later changed to
+            React.js for better performance.
+            The styles are written in pure CSS and
+            the layout follows the mobile-first
+            approach. Currently functioning:
+            responsive page resize and menu; item
+            search; auto-completing search input;
+            adding item to cart; showing sum of
+            items; emptying cart.
+          </p>
+        </li>
+        <div class="project-image-container">
+          <!-- took it out from <li> for easy flex positioning -->
+          <img class="project-image" src="https://i.ibb.co/yscPQYr/project-travel-webpage.jpg"
+            alt="image-of-travel-webpage-project">
+          <div class="project-image-caption">
+            <a target="_blank"
+              href="https://www.khanacademy.org/computer-programming/project-travel-webpage/5843274182443008">Click to
+              open project on<br> Khan Academy
+            </a>
+          </div>
+        </div>     
+      </ul>
+    </section>
+
+    <!-- SECTION 3: ABOUT -->
+    <section id="about" class="theme-green">
+
+      <h2 class="star-logo">ABOUT</h2>
+
+      <p class="about-text">WHEN WORKING ON WEBPAGES, I CHOOSE QUALITY OVER QUANTITY. I PAY ATTENTION TO THE DETAILS
+        THAT ALLOWS ME TO CREATE A MORE SOPHISTICATED WEB DESIGN. AS A GOOD LISTENER I MAKE SURE THAT CUSTOMERS ARE
+        HEARD AND THEIR PERSONAL COMMENTS AND REQUESTS ARE INCORPORATED IN THE FINAL PRODUCT. I STRIVE FOR AN ADAPTIVE
+        USER EXPERIENCE, AND WITH A HIGH SENSE OF EMPATHY I AM FLEXIBLE TO SWITCH THE MINDSET TO MEET PRACTICAL USER
+        NEEDS. THEREFORE, I AM VERY EXCITED TO PROVIDE YOU WITH MY ASSISTANCE.
+      </p>
+    </section>
+
+    <!-- SECTION 4: CONTACT ME -->
+    <section id="contact-me" class="theme-white">
+
+      <h2 class="star-logo">CONTACT ME</h2>
+
+      <p class="text-color-black">You can contact me by sending Email to this Email ID:
+        <a class="text-color-green" id="email-address" href="mailto:vass.ferenc91@gmail.com">VASS.FERENC91@GMAIL.COM
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <section class="theme-grey">
+      <div class="footer-container">
+        <div class="footer-location">
+          <h5>LOCATION<br></h5>
+          <p>COPENHAGEN S</p>
+        </div>
+
+        <div class="footer-social-media">
+          <h5>AROUND THE WEB</h5>
+          <a target="_blank" href="" class="fa fa-github"></a>
+          <a target="_blank" href="https://www.linkedin.com/in/ferencvass91" class="fa fa-linkedin"></a>
+        </div>
+        <div class="footer-centering-block"></div>
+      </div>
+    </section>
+
+    <section class="theme-dark-grey">
+      <p>Copyright &copy; FERENC_VASS</p>
+    </section>
+  </footer>
+</body>
+
+</html>
