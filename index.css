@@ -222,7 +222,11 @@
         height: 90vw;
         }
       
-      .profile-img-container img {
+      #profile-img {
+        display: none;
+      }
+      
+      .profile-img {
         animation: fadein 4s 1;
         width: 100%;
         border-radius: 1em;
