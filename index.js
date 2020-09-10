@@ -16,7 +16,9 @@ menuBtn.addEventListener('click', () => {
 
 const profilePhoto = document.getElementById('profile-img');
 
-window.addEventListener('DOMContentLoaded', (event) => {
-  profilePhoto.style.display = "block";
-  profilePhoto.classList.add('profile-img');
+window.addEventListener('DOMContentLoaded', (event, setOpacity) => {
+  setTimeout(() => {
+    profilePhoto.style.opacity = "1"
+  }, 4000);
+  profilePhoto.classList.add('profile-img')
 })
