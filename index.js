@@ -13,3 +13,12 @@ menuBtn.addEventListener('click', () => {
     navBar.style.height = '0';
   }
 });
+
+const profilePhoto = document.getElementById('profile-img');
+
+window.addEventListener('DOMContentLoaded', (event, setOpacity) => {
+  setTimeout(() => {
+    profilePhoto.style.opacity = "1"
+  }, 4000);
+  profilePhoto.classList.add('profile-img')
+})
