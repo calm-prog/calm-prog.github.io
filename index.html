@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="index.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
   <title>Ferenc's portfolio</title>
@@ -28,31 +29,33 @@
   </header>
   <main>
     <!-- SECTION 1: INTRO -->
-    <section id="intro" class="theme-green">
+    <section id="intro" class="theme-green intro">
       <div class="desktop-container">
         <div class="profile-img-container mobile-container">
+          <div class="fadein" data-aos="img-animation"></div>
           <img src="images/profile-photo.png" alt="profile-photo-of-ferenc" id="profile-img">
         </div>
       </div>
-
-      <p class="intro-paragraph star-logo mobile-container">
-        <strong>HI, I'M FERENC. I BUILD INTERFACES & I'M BASED IN<br> COPENHAGEN S</strong></p>
-      <p class="intro-position">FRONTEND DEVELOPER</p>
+      <div class="intro-paragraph-container">
+        <p class="intro-paragraph mobile-container">
+          <strong>HI, I'M FERENC. I BUILD INTERFACES & I'M BASED IN COPENHAGEN S</strong></p>
+        <p class="intro-position star-logo">FRONTEND DEVELOPER</p>
+      </div>
     </section>
 
     <!-- SECTION 2: PORTFOLIO -->
     <section id="portfolio" class="theme-white">
 
-      <h2 class="star-logo">PORTFOLIO</h2>
+      <h2 class="star-logo" data-aos="zoom-in">PORTFOLIO</h2>
       <div class="desktop-container">
         <ul class="project-container-ul">
 
           <!-- FIRST PROJECT -->
-          <li class="project-bullet-point mobile-container">
+          <li class="project-bullet-point mobile-container" data-aos="fade-up">
             <h3 class="text-color-green">FOOD WEBSHOP</h3>
 
             <h4 class="text-color-black project-subtitle">Project description</h4>
-            <div class="project-paragraph text-color-black">
+            <div class="project-paragraph text-color-black" >
                 <p>It is an ongoing project for a food
                 webshop, that was mainly inspired by webpages 
                 like toogoodtogo.dk or bilkatogo.dk.
@@ -76,15 +79,12 @@
           </li>
           <div class="project-image-container">
             <img class="project-image" src="images/project-image.png"
-              alt="image-of-travel-webpage-project">
+              alt="image-of-travel-webpage-project" data-aos="slide-right">
+            <div class="fadein" data-aos="img-animation"></div>
             <div class="project-image-caption">
               <p class="link"><a target="_blank" class="website"
                 href="http://185.224.139.14:5000/">
-                OPEN IN BROWSER
-              </a></p>
-              <p class="link"><a target="_blank" class="github-repo"
-                href="https://github.com/ta-klauz/FoodApp">
-                OPEN GITHUB REPOSITORY
+                VIEW PROJECT
               </a></p>
             </div> 
           </div> 
@@ -99,8 +99,8 @@
     <!-- SECTION 3: ABOUT -->
     <section id="about" class="theme-green">
 
-      <h2 class="star-logo">ABOUT</h2>
-      <div class="about-text mobile-container desktop-container">
+      <h2 class="star-logo" data-aos="zoom-in">ABOUT</h2>
+      <div class="about-text mobile-container desktop-container" data-aos="fade-up">
         <p>I am an international relations graduate that
         discovered the world of web development by chance.
         From the beginning I enjoyed programming so much that I decided to
@@ -128,9 +128,9 @@
     <!-- SECTION 4: CONTACT ME -->
     <section id="contact-me" class="theme-white">
 
-      <h2 class="star-logo">CONTACT ME</h2>
+      <h2 class="star-logo" data-aos="zoom-in">CONTACT ME</h2>
 
-      <p class="text-color-black contact-paragraph">You can contact me by writing me to this email address:
+      <p class="text-color-black contact-paragraph" data-aos="fade-up">You can contact me by writing me to this email address:
         <a class="text-color-green" id="email-address" href="mailto:vass.ferenc91@gmail.com">VASS.FERENC91@GMAIL.COM
         </a>
       </p>
@@ -142,12 +142,12 @@
     <section class="theme-grey">
       <div class="mobile-container">
         <div class="footer-container desktop-container">
-          <div class="footer-location">
+          <div class="footer-location" data-aos="fade-right">
             <h5>LOCATION<br></h5>
             <p>COPENHAGEN S</p>
           </div>
   
-          <div class="footer-social-media">
+          <div class="footer-social-media" data-aos="flip-left">
             <h5>AROUND THE WEB</h5>
             <a target="_blank" href="https://github.com/calm-prog" class="fa fa-github"></a>
             <a target="_blank" href="https://www.linkedin.com/in/ferencvass91" class="fa fa-linkedin"></a>
@@ -162,6 +162,14 @@
   </footer>
 
   <script src="index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1600,
+      anchorPlacement: 'bottom-center',
+      once: true,
+    });
+  </script>
 </body>
 
 </html>
