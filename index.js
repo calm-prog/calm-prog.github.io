@@ -15,7 +15,9 @@ menuBtn.addEventListener('click', () => {
 });
 
 const profilePhoto = document.getElementById('profile-img');
+const fadein = document.querySelector('.profile-img-container .fadein'); 
 
 window.addEventListener('load', (event, setOpacity) => {
-  profilePhoto.classList.add('profile-img')
-})
+  fadein.classList.add('fadein-profile');
+  profilePhoto.classList.add('profile-img');
+});
