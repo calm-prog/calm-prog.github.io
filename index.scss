@@ -250,7 +250,6 @@
       }
 
       .fadein {
-        display: none;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -258,6 +257,10 @@
         left: 0;
         background-color: grey;
         z-index: 1; 
+      }
+
+      .profile-img-fade-in {
+        display: none;
       }
 
       .fadein-profile {

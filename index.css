@@ -324,6 +324,10 @@ h5 {
   z-index: 1;
 }
 
+.profile-img-fade-in {
+  display: none;
+}
+
 .fadein-profile {
   -webkit-animation: smth 1.7s forwards;
           animation: smth 1.7s forwards;
