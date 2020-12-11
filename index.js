@@ -16,6 +16,6 @@ menuBtn.addEventListener('click', () => {
 
 const profilePhoto = document.getElementById('profile-img');
 
-window.addEventListener('DOMContentLoaded', (event, setOpacity) => {
+window.addEventListener('load', (event, setOpacity) => {
   profilePhoto.classList.add('profile-img')
 })
