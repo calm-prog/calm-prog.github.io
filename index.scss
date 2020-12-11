@@ -259,6 +259,14 @@
         z-index: 1; 
       }
 
+      .profile-img-fade-in {
+        display: none;
+      }
+
+      .fadein-profile {
+        animation: smth 1.7s forwards;
+      }
+
       @keyframes smth {
         0%{transform: translateX(-100%)}
         100%{transform: translateX(100.1%)}
