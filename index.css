@@ -434,19 +434,24 @@ h5 {
 }
 
 .intro-paragraph {
-  opacity: 0;
   font-family: monospace;
   padding: 0;
   font-size: 1.5rem;
   word-spacing: 2px;
   border-right: 0.25em solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-animation: typing 4.5s steps(62, end) forwards, blink-caret 0.7s step-end infinite;
-          animation: typing 4.5s steps(62, end) forwards, blink-caret 0.7s step-end infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+}
+
+@media screen and (min-width: 800px) {
+  .type-effect {
+    opacity: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-animation: typing 4.5s steps(62, end) forwards, blink-caret 0.7s step-end infinite;
+            animation: typing 4.5s steps(62, end) forwards, blink-caret 0.7s step-end infinite;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
 }
 
 /* The typing effect */
