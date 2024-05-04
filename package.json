@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-cms-types": "wget -O schema.json https://raw.githubusercontent.com/calm-prog/portfolio-content/main/schema.json && npx sanity typegen generate ; rm schema.json"
   },
   "dependencies": {
     "@sanity/image-url": "^1.0.2",
