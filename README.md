@@ -1,1 +1,1 @@
-# Hi! My name is Ferenc, I am a front-end developer, and this my portfolio website.
+# Hi! You are in the repository of my personal website that is hosted on GitHub.
